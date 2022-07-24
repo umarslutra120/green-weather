@@ -1,0 +1,29 @@
+<div class="weather">
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20">
+        <img src="../../assets/Group 3467.png" style="height: 150px;width:260px">
+        <div class="login-form" style="background-color: white">
+            <div fxLayout="column"  fxLayoutAlign="center center">
+                <div style=" padding-top: 20px;" fxLayoutGap="30" fxLayout="column">
+                    <div fxFlexAlign="center" style="font-size: 25px">Enter 4 Digit Code</div>
+                    <div>Please enter the 4-digit code </div>
+                </div>
+                <div>sent to your registered Email Address</div>
+            </div>
+            <div fxLayoutGap="30" style="padding-top: 15px;">
+                <div fxLayout="column" fxLayoutAlign="center center">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label fxFlexOffset="7">
+                            Enter 4-digit code
+                        </mat-label>
+                        <input type="number" matInput>
+                        <mat-icon matPrefix>dialpad</mat-icon>
+                    </mat-form-field>
+                    <div class="button">
+                        <button mat-raised-button color="primary" routerLink="/Login"
+                            style="border-radius:12px;width:100px;margin-top: 2rem;">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

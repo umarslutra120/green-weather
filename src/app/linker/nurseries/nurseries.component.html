@@ -1,0 +1,36 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" opened class="example" >
+        <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
+            <span>thriftplan</span>
+            <button class="bar1" mat-icon-button (click)="toggleDisplay()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar>
+        <div fxLayout="column" fxLayoutGap="20" *ngIf="isShowDiv">
+            <button mat-button class="btn"  fxFlexOffset="10" fxLayoutAlign=" start center">
+                <mat-icon class="icon" fxFlexOffset="15">home</mat-icon>Home
+            </button>
+            <button mat-button class="btn"  routerLink="dashboard" fxLayoutAlign=" start center" routerLinkActive="active">
+                <mat-icon class="icon" fxFlexOffset="15">account_balance_wallet</mat-icon>Manage Assets
+            </button>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <mat-toolbar class="bar" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="20" >
+            <mat-icon svgIcon="chat"></mat-icon>
+            <mat-icon svgIcon="notification"></mat-icon>
+            <span class="txt">John Doe</span>
+            <img src="../../assets/Avatar.png " width="40px" >
+            <button class="exampleClass" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon class="menu" svgIcon="small-down" ></mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item >
+                  <span>Log out</span>
+                </button>
+              </mat-menu>
+        </mat-toolbar>
+        <router-outlet>
+        </router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

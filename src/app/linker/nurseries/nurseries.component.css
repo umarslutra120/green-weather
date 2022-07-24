@@ -1,0 +1,56 @@
+.example {
+    width: 280px;
+    background: linear-gradient(#004390, #3F638F, #040405);
+}
+
+mat-drawer-container {
+    height: 100vh;
+}
+
+mat-toolbar {
+    background-color: #004390;
+    color: white;
+    height: 50px;
+}
+
+.btn {
+    font-size: large;
+    border: 0px;
+    background: none;
+    color: white;
+}
+
+.hello {
+    text-decoration: none;
+    color: white;
+}
+
+.bar {
+    background-color: white;
+}
+
+.txt {
+    color: #4D4F5C;
+}
+
+.menu {
+    height: 15px;
+    width: 13px;
+}
+.exampleClass{
+    border: 0px;
+    background-color: white;
+    margin-right: 60px;
+}
+.bar1{
+    background:none;
+    border: 0px;
+    color: white;
+}
+.active {
+  background-color: white;
+  width: 200px;
+  color: #004390;
+  padding: 10px 20px 10px 0px;
+  border-radius: 0px 40px 40px 0px;
+}

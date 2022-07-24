@@ -1,0 +1,84 @@
+<div class="example-card" fxLayout="column" fxLayoutGap="20">
+    <div fxLayout="row" fxLayoutAlign="space-between baseline">
+        <mat-label style="font-size: 20px">Species Listing</mat-label>
+
+        <button mat-raised-button fxFlex="12" [routerLink]="['addspecies']" [queryParams]="{data:'Add'}" >Add Species</button>
+    </div>
+
+
+    <mat-card>
+
+        <mat-form-field class="search-input" appearance="outline">
+            <mat-label fxFlexOffset="7" fxFlexAlign="center">
+                Search
+            </mat-label>
+            <input type="text" matInput>
+            <mat-icon matPrefix>search</mat-icon>
+        </mat-form-field>
+        <div>
+            <table>
+                <tr class="table">
+                    <th>Sr#</th>
+                    <th>Species Name</th>
+                    <th>Alternate Name</th>
+                    <th>Seed count/kg</th>
+                    <th>Success Ratio %</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rose</td>
+                    <td>Rose Plant</td>
+                    <td>32</td>
+                    <td>80%</td>
+                    <td>
+                        <div fxLayoutGap="10">
+                            <button mat-raised-button [routerLink]="['addspecies']"[queryParams]="{data1:'Edit'}">Edit</button>
+                            <button class="mat-button" [routerLink]="['addspecies']"[queryParams]="{data2:'View'}">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Banana</td>
+                    <td>Banana Plant</td>
+                    <td>33</td>
+                    <td>53%</td>
+                    <td>
+                        <div fxLayoutGap="10">
+                            <button mat-raised-button [routerLink]="['addspecies']"[queryParams]="{data1:'Edit'}">Edit</button>
+                            <button class="mat-button" mat-button [routerLink]="['addspecies']"[queryParams]="{data2:'View'}">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>SunFlower</td>
+                    <td>SunFlower Seed</td>
+                    <td>212</td>
+                    <td>32%</td>
+                    <td>
+                        <div fxLayoutGap="10">
+                            <button mat-raised-button [routerLink]="['addspecies']"[queryParams]="{data1:'Edit'}">Edit</button>
+                            <button class="mat-button" [routerLink]="['addspecies']"[queryParams]="{data2:'View'}">View</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Apple</td>
+                    <td>Apple Seed</td>
+                    <td>2121</td>
+                    <td>50%</td>
+                    <td>
+                        <div fxLayoutGap="10">
+                            <button class="btn-action" mat-raised-button [routerLink]="['addspecies']"[queryParams]="{data1:'Edit'}">Edit</button>
+                            <button class="mat-button" mat-button [routerLink]="['addspecies']"[queryParams]="{data2:'View'}">View</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </mat-card>
+</div>

@@ -1,0 +1,57 @@
+<div class="example-card" fxFlexOffset="4%" fxLayout="column" fxLayoutGap="20">
+    <div fxFlexOffset="5">
+        <mat-label class="field" fxFlexOffset="1">{{order}} Species</mat-label>
+    </div>
+
+    <mat-card>
+        <div fxLayout="column" fxLayoutGap="20">
+            <div fxLayoutAlign="start center" fxLayoutGap="20">
+                <img fxFlexOffset="2" class="rounded-circle" width="100px" [src]="urllink">
+                <h3>Species Image</h3>
+
+            </div>
+            <input hidden type="file" #image (change)="selectFile($event)">
+            <div fxLayoutGap="20">
+                <div fxFlexOffset="2">
+                    <button  (click)="image.click()" mat-raised-button>Choose File</button>
+                </div>
+                <mat-form-field fxFlexOffset="11" class="hello" appearance="outline">
+                    <mat-label fxFlexOffset="10">Species ID</mat-label>
+                    <input matInput type="text">
+                </mat-form-field>
+            </div>
+        </div>
+        <div fxLayoutGap="20" fxLayoutAlign="space-evenly center">
+            <mat-form-field appearance="outline">
+                <mat-label fxFlexOffset="12">Species Name</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            <mat-form-field style="text-align:right" class="" appearance="outline">
+                <mat-label style="margin-right: 15px">پودے کا نام</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            <mat-form-field class="" appearance="outline">
+                <mat-label fxFlexOffset="12">Alternate Name</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+            <mat-form-field style="text-align: right" class="" appearance="outline">
+                <mat-label style="margin-right: 15px">پودے کا نام</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+        </div>
+        <div fxLayoutGap="20">
+            <mat-form-field class="field" appearance="outline">
+                <mat-label fxFlexOffset="13">Seed count/kg</mat-label>
+                <input matInput type="number">
+            </mat-form-field>
+            <mat-form-field class="field" appearance="outline">
+                <mat-label fxFlexOffset="10">Success Ratio%</mat-label>
+                <input matInput type="text">
+            </mat-form-field>
+        </div>
+    </mat-card>
+    <div class="button" fxLayoutAlign="end end" fxLayoutGap="13">
+        <button mat-raised-button fxFlex="10" >{{save}}</button>
+        <button mat-raised-button fxFlex="10"  style="background: #BCBCBC">{{back}}</button>
+    </div>
+</div>

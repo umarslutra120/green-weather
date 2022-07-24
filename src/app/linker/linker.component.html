@@ -1,0 +1,101 @@
+<mat-toolbar style="background-color: #0D1E5C" fxLayoutAlign="space-between center">
+    <div>
+        <button mat-icon-button aria-label="Example icon-button with menu icon">
+            <mat-icon fxFlexOffset="8" style="color: white">menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <span style="color: white"> A Greener Tomorrow</span>
+    </div>
+    <div>
+        <mat-chip-list>
+            <mat-chip>
+                <mat-chip-avatar>
+                    <img src="../../assets/172977064_1180840626084050_7833793413638854948_n.jpg " />
+                </mat-chip-avatar>
+                Umar Razzaq
+            </mat-chip>
+        </mat-chip-list>
+    </div>
+</mat-toolbar>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened style="background-color:#0D1E5C" >
+
+        <!-- <div fxLayout="column" style="color: white" > -->
+
+            <img src="../../assets/Group 3520.png" width="160px">
+
+        <!-- </div> -->
+            <div   fxLayout="column" fxLayoutGap="12px">
+                <a class="hello" fxLayoutAlign="space-between  " routerLinkActive="active"routerLink="dashboard">
+                    Dashboard
+                    <mat-icon svgIcon="home"></mat-icon>
+                </a>
+
+
+                <a class="hello" routerLink="sapling-requests" routerLinkActive="active"fxLayoutAlign="space-between " (click)="toggleDisplay1()">
+                    Sapling Request<mat-icon svgIcon="plant"></mat-icon>
+                </a>
+                <a class="hello1" routerLink="sapling-requests/individual"routerLinkActive="active"*ngIf="isShowDiv1" >Individual
+                
+                </a>
+                <a class="hello1" routerLink="sapling-requests/organization-contr"routerLinkActive="active"*ngIf="isShowDiv1" >Organization(Contracted)
+                
+                </a>
+                <a class="hello1" routerLink="sapling-requests/organization-non"routerLinkActive="active"*ngIf="isShowDiv1" >Organization(Non-Contracted)
+                
+                </a>
+
+
+                <a class="hello" routerLink="inventory" routerLinkActive="active" fxLayoutAlign="space-between center">
+                    Inventory<mat-icon svgIcon="3490"></mat-icon>
+                </a>
+
+
+                <a class="hello" routerLink="species" routerLinkActive="active"fxLayoutAlign="space-between center" (click)="toggleDisplay()">
+                    Species<mat-icon svgIcon="flowers"></mat-icon>
+                    
+                </a>                
+                <a class="hello1" routerLink="species/success-ratio" routerLinkActive="active" *ngIf="isShowDiv" >
+                    Species Success Ratio%
+                </a>
+                
+
+
+                <a class="hello" routerLink="gardeners"routerLinkActive="active"fxLayoutAlign="space-between center">
+                    Gardeners<mat-icon svgIcon="farmer(1)"></mat-icon>
+                </a>
+
+
+                <a class="hello" routerLink="nurseries"routerLinkActive="active"fxLayoutAlign="space-between center">
+                    Nuseries<mat-icon svgIcon="indoor-plants"></mat-icon>
+                </a>
+
+
+                <a class="hello" routerLink="attendence"routerLinkActive="active"fxLayoutAlign="space-between center">
+                    Attendace<mat-icon svgIcon="calender"></mat-icon>
+                </a>
+
+
+                <a class="hello" routerLink="user-management"routerLinkActive="active"fxLayoutAlign="space-between center">
+                    User Management<mat-icon svgIcon="3226"></mat-icon>
+                </a>
+
+
+                <a class="hello" routerLink="reports"routerLinkActive="active"fxLayoutAlign="space-between center">
+                    Reports<mat-icon svgIcon="ic-assign"></mat-icon>
+                </a>
+
+
+                <a class="hello" routerLink="app-setting"routerLinkActive="active" fxLayoutAlign="space-between center">
+                    App Settings<mat-icon svgIcon="phone"></mat-icon>
+                </a>
+            </div>
+
+        
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet>
+        </router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

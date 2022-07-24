@@ -1,0 +1,48 @@
+.example-card {
+    width: 1000px;
+    border-radius: 10px;
+    
+
+}
+.rounded-circle{
+    border-radius: 200px;
+}
+
+::ng-deep .mat-form-field-outline-start {
+
+    border-radius: 28px 0 0 28px !important;
+
+    min-width: 28px !important;
+
+}
+
+::ng-deep .mat-form-field-outline-end {
+
+    border-radius: 0 28px 28px 0 !important;
+}
+
+.mat-raised-button {
+    background: linear-gradient(#242F68, #2E4095);
+    color: white;
+    border-radius: 50px;
+}
+.field{
+    font-size: 28px;
+    color: #000000;
+}
+.image{
+    padding-left: 35px;
+
+}
+
+
+.mat-form-field{
+width: 250px;
+    font-size: smaller;
+}
+.field{
+    width: 227px;
+}
+.hello{
+    width: 190px;
+}

@@ -1,0 +1,33 @@
+.example-full-width {
+    height: 60px;
+    width: 280px;
+    font-size: small;
+}
+
+::ng-deep .mat-form-field-outline-start {
+
+    border-radius: 28px 0 0 28px !important;
+
+    min-width: 28px !important;
+
+}
+
+::ng-deep .mat-form-field-outline-end {
+
+    border-radius: 0 28px 28px 0 !important;
+
+}
+
+.weather {
+    background-image: url('../../assets/PikPng.com_natural-background-images-png_2103333.png');
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form {
+    height: 330px;
+    width: 350px;
+}

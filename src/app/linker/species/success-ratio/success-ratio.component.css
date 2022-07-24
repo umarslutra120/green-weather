@@ -1,0 +1,51 @@
+.example-card {
+    padding: 56px 60px;
+}
+.mat-card{
+    border-radius: 10px;
+    /* width: auto; */
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+::ng-deep .search-input .mat-form-field-outline-start {
+
+    border-radius: 5px 0 0 5px !important;
+
+    /* min-width: 5px !important; */
+
+}
+
+::ng-deep .search-input .mat-form-field-outline-end {
+
+    border-radius: 0 5px 5px 0 !important;
+
+}
+
+
+
+
+td {
+    text-align: left;
+}
+
+th {
+    text-align: left;
+    background: linear-gradient(#242F68, #2E4095);
+    color: white;
+    opacity: 100%;
+}
+
+.search{
+    font-size: small;
+}

@@ -1,0 +1,67 @@
+.mat-chip-avatar img {
+    height: 25px;
+    width: 25px;
+}
+.mat-chip{
+    /* height: 44px; */
+    width: 138px;
+    border-radius: 100px;
+}
+
+.example-container {
+    height: 145vh;
+    margin-top: 1px;
+}
+.active{
+    background-color: white;
+}
+.hello {
+    background: linear-gradient(#00116A,#0348D6);
+    border-radius: 0 24px 24px 0;
+    padding: 12px 20px;
+    width: 96%;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+.hello1{
+    background-color: #5E6EC1;
+    border-radius: 0 24px 24px 0;
+    width: 173px;
+    font-size: 12px;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+
+}
+
+button {
+    width: 200px;
+}
+
+img{
+    padding: 20px 28px;
+}
+
+::ng-deep .mat-drawer .mat-drawer-inner-container {
+    overflow: hidden;
+}
+
+.button2 {
+    width: 300px;
+}
+
+::ng-deep .mat-button-wrapper {
+    width: 100%;
+}
+
+mat-drawer {
+    width: 250px;
+}
+mat-toolbar{
+    height: auto;
+}
+/* a{
+    cursor: none;
+
+} */

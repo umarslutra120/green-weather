@@ -1,0 +1,42 @@
+.example-full-width {
+    height: 60px;
+    width: 280px;
+    font-size: small;
+}
+
+::ng-deep .mat-form-field-outline-start {
+
+    border-radius: 28px 0 0 28px !important;
+
+    min-width: 28px !important;
+
+}
+
+::ng-deep .mat-form-field-outline-end {
+
+    border-radius: 0 28px 28px 0 !important;
+
+}
+
+.weather {
+    background-image: url("../../assets/springflowersfeat.jpg");
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(#D9DEFA);
+}
+
+.login-form {
+    height: 400px;
+    width: 350px;
+    border: #E4E7E9 1px;
+}
+
+.button1 {
+    margin-left: 160px;
+    color: #4D4F5C;
+    opacity: 50%;
+    /* font-size: 3px; */
+}
